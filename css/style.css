@@ -1,0 +1,115 @@
+* {
+    font-family: MarkWeb;
+    color: #000;
+    font-size: 16px;
+    /*Font: Mark OT
+    15px Mobile checked*/
+}
+a, .gray {
+    color:#808080;
+    /*Link & Callout Color: #808080*/
+}
+header {
+    background-color:#000;
+    padding:7px;
+    position:fixed;
+    width:100%;
+    z-index:1;
+}
+.jumbotron {
+    background-image: url(../images/hero_desktop_1x.jpg);
+    background-repeat:no-repeat;
+    background-size:contain;
+    background-position:center;
+    background-size:cover;
+}
+.vertical-center {
+    min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+    min-height: 100vh; /* These two lines are counted as one :-)       */
+    display: flex;
+    align-items: center;
+}
+.jumbotron__callout {
+    font-size:72px;
+/*Size: 44px Mobile | 72px desktop checked*/
+    color: #f0725d;
+    font-family: CanelaWeb; 
+    text-align: center;
+    background-color:white;
+/*Font: Canela Medium*/
+  }
+h2 { /* headline*/
+   font-family: CanelaWeb; 
+   font-size:48px; 
+   /*Size: 30px Mobile checked | 
+   Font: Canela Medium*/
+}
+h3 { /*brand name*/
+    font-size:21px;
+    letter-spacing: 2px;
+    /*Size: 18px Mobile | 21px Desktop checked*/
+}
+h4 { /*variant*/
+    font-size:24px;
+    /*Size: 21px Mobile | 24px Desktop checked*/
+}
+h5 { /*subhead*/
+    font-size:21px;
+    /*Size: 18px Mobile | 21px Desktop checked*/
+
+}
+.accent_color {
+    color: #f0725d;
+}
+.vertical-align {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+  }
+  button {
+      cursor: pointer;
+      font-size:18px;
+      background-color:#000;
+      color:#fff;
+      padding:8px;
+      outline: none !important;
+    box-shadow: none;
+  }
+  button:hover, button:active, button:focus {
+      background-color: #fff;
+      color:#000;
+  }
+  /* Large devices (desktops, 992px and up)*/
+  @media (max-width: 992px) { 
+    * {
+        font-size:15px;
+    }  
+    .jumbotron {
+        background-image: url(../images/hero_mobile_1x.jpg);
+    }
+    .jumbotron__callout {
+        font-size: 44px;
+    }
+    h2 {
+        font-size: 30px;
+    }
+    h3 {
+        font-size: 18px;
+    }
+    h4 {
+        font-size: 21px;
+    }
+    h5 {
+        font-size: 18px;
+    }
+    .border-left {
+        border-left: 0 !important;
+    }
+    .border-accent {
+        border-bottom: 1px solid #f0725d;
+    }
+    .vertical-center {
+        align-items: flex-start;
+  }
+}

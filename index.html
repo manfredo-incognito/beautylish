@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="font/font.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <title></title>
+  </head>
+  <body>
+      <header>
+          <a href="https://www.beautylish.com/" target="_blank">
+            <img class="d-lg-none" src="images/logo_mobile_1x.png"> <!-- this one will be visible on mobile -->
+            <img class="d-none d-lg-block" src="images/logo_desktop_1x.png"> <!-- this one will be visible on everything else -->
+          </a>
+
+      </header>
+      <main>
+      <div class="jumbotron jumbotron-fluid vertical-center">
+          <div class="container">
+            <div class="row">
+                <div class="col-10 offset-1 jumbotron__callout">
+                    Tropical Sunset Collection
+                </div>
+            </div>
+          </div>
+  <!--<h1 class="display-4">Hello, world!</h1>
+  <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+  <hr class="my-4">
+  <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+  <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>-->
+      </div> <!-- end jumbotron -->
+    <div class="container">
+        <script id="content-template" type="text/x-handlebars-template">
+  <div class="row">
+    <div class="col-12 col-lg-8">
+      <h3>{{brand.name}}</h3>
+      <h2>Limited Edition {{product.name}}</h2>
+      <p>{{product.description}}</p>
+    </div>
+    <div class="col-12 col-lg-4 d-none d-lg-block"></div>
+  </div> 
+    <div class="row vertical-align">
+    <div class="col-12 col-lg-8">
+      <img src="images/tropical_sunset_1x.jpg" class="img-fluid"/>
+    </div>
+    <div class="col-12 col-lg-4">
+      <h4 class="mb-0">{{trimString variants.[0].name}}</h4>
+      <p class="gray">{{variants.[0].short_description}}</p>
+      <p>{{variants.[0].description}}</p>
+      <p>{{variants.[0].size}}</p>
+      <p>{{variants.[0].price}}</p>
+      <button id="thisb">Add to Bag!!!</button>
+    </div>
+  </div> 
+  <div class="row vertical-align">
+    <div class="col-lg-4 order-2 order-lg-1">
+        <h4 class="mb-0">{{trimString variants.[1].name}}</h4>
+      <p class="gray">{{variants.[1].short_description}}</p>
+      <p>{{variants.[1].description}}</p>
+      <p>{{variants.[1].size}}</p>
+      <p>{{variants.[1].price}}</p>
+      <button>Add to Bag</button>
+    </div>
+    <div class="col-lg-8 order-lg-2">
+        <img src="images/savannah_love_1x.jpg" class="img-fluid"/>
+    </div>
+  </div> 
+        </script>
+        <div class="content-placeholder"></div>
+        </div>
+    </main>
+      <footer class="container mt-4">
+        <script id="footer-template" type="text/x-handlebars-template">
+          <div class="row border-accent">
+              <div class="col">
+                <h2>{{general.headline}}</h2>
+              </div>
+          </div>
+          <div class="row mt-4">
+              <div class="col-12 col-lg-4">
+                <h4>{{general.subhead_1}}</h4>
+                <p>{{general.copy_1}}</p>
+              </div>
+              <div class="col-12 col-lg-4 border-left">
+                <h4>{{general.subhead_2}}</h4>
+                <p>{{general.copy_2}}</p>
+              </div>
+              <div class="col-12 col-lg-4 border-left">
+                <h4>{{general.subhead_3}}</h4>
+                <p>{{general.copy_3}}</p>
+                {{#contacts}}
+                {{label}} <a href="{{href}}">{{msg}}</a><br/>
+                {{/contacts}}
+                
+              </div>
+          </div>
+        </script>
+      <div class="footer-placeholder"></div>   
+    </footer>      
+        
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!--<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
+    <script  src="js/script.js"></script>
+  </body>
+</html>
